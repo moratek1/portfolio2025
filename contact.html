@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>mrt - Contact</title>
+    <script>
+        function copyToClipboard() {
+            var emailText = document.getElementById('email-text').innerText;
+            navigator.clipboard.writeText(emailText).then(function() {
+                // Change button text temporarily to show success
+                const copyButton = document.getElementById('copy-button');
+                const originalText = copyButton.innerHTML;
+                copyButton.innerHTML = 'Copied!';
+                setTimeout(function() {
+                    copyButton.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">MRT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Showcase</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            
+            <div class="quote-container">
+                <div id="quote">
+                    "I am able to adapt to various styles and prioritize high-quality, timely content."
+                </div>
+                <div id="quote">
+                    "By hiring me, you gain not just an editor, but a dedicated work partner committed to taking your videos to new heights."
+                </div>
+            </div>
+            
+            <div id="email-container">
+                <h3>Contact me directly via email:</h3>
+                <div id="email">
+                    <span id="email-text">mrtvideoediting@gmail.com</span>
+                    <button id="copy-button" onclick="copyToClipboard()">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <p class="email-note">I typically respond within 1-2 business days</p>
+            </div>
+            
+            <div class="contact-info-grid">
+                <div class="contact-info-box">
+                    <i class="fas fa-comments"></i>
+                    <h3>Initial Discussion</h3>
+                    <p>Let's discuss your project needs, timeline, and creative direction.</p>
+                </div>
+                <div class="contact-info-box">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Project Scope</h3>
+                    <p>We'll outline deliverables, revisions, and pricing structure.</p>
+                </div>
+                <div class="contact-info-box">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Start Creating</h3>
+                    <p>Once we've agreed on terms, I'll begin working on your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MRT Video Editing. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>mrt - Video Editing Portfolio</title>
+    <style>
+        body {
+            font-family: 'Satoshi', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #5D737E;
+        }
+
+        #logo {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1rem;
+            padding: 1rem;
+            background-color: #3F4045;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: #A4B28C;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label,
+        form input,
+        form textarea {
+            margin-bottom: 1rem;
+        }
+
+        form button {
+            cursor: pointer;
+            padding: 0.5rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .client-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            overflow: hidden;
+        }
+
+        .client-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .client-container:hover img {
+            opacity: 0.5;
+        }
+
+        .client-container .subscriber-count {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .client-container:hover .subscriber-count {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">MRT</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Showcase</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="intro-section">
+        <div class="container">
+            <h1>Professional Video Editing Services</h1>
+            <p>I create engaging and dynamic video content that captures viewers' attention. With extensive experience working with popular content creators, I can elevate your videos to the next level.</p>
+        </div>
+    </section>
+  
+    <section id="showcase">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="video-grid">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/RlPXGfZkPOo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/yu9JuLOpnBE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/eAkeIlhCk20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/f_gqaEFHn1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NBoqtIO54Us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/wwXGLbXj6U4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/y0abwvSpm-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/hTO8u-NcuSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LCZJmLkzmcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/l2JP8AGCduU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/u4pngfwtilo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/v7P8kmduLLg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nraPB63f0Y4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/oOmOcmA0D_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/wsoWn2QTORk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Sbb367y5nsY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/tfSbbTgbO1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/tfSbbTgbO1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/YgUbIff7MT0?si=UdrY4dN5XzA23m5Z" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VeScDt-FZZQ?si=jmmLFvGvR9cOyf5V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/GLZtW4mK6nI?si=pROONZNudtPKvY9i" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/X_IngFCsBMQ?si=2nbDOXb-akNXv-v_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/85FeeerIoDc?si=DgdRE3NH6T7tUSX7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/RocBDDbx4JU?si=EO29zOIiV3w7RMnF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/8CmSC3Abhx4?si=3GVAFbzCaeTLMaKr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MheUEtudRVk?si=kEyWCMlH9j0Z_E7m" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Kxk5ofH0WvQ?si=vt19SN-hxmrrqquJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/317x86Qm_3A?si=WxD1dUwh2Hz50twB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/utlfJWOkMgk?si=Qk-svJ5GjsyALaDq" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/aWOKSgfvoyE?si=GPjEeDN_Ft2Zatwr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MRT Video Editing. All rights reserved.</p>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
